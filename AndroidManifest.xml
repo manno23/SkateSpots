@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.manno.android.skatespotsapp"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="11" />
+
+    <application android:name="com.manno.android.skatespotsapp.SkateSpotSession"
+        android:label="@string/app_name"
+        android:icon="@drawable/skate_icon"
+        android:theme="@style/AppTheme"
+        android:debuggable="true" >
+
+        <activity android:name=".MainActivity"
+                  android:logo="@drawable/skate_spots_logo_altered"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddSpotActivity"
+            android:logo="@drawable/skate_spots_logo_altered"
+            android:label=""/>
+        <activity android:name=".ViewSpot.ViewSpotActivity"
+                  android:logo="@drawable/skate_spots_logo_altered"
+                  android:label=""/>
+        <activity android:name=".NewsFragment" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.manno.android.SKATESPOTSAPP" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Service.BackgroundDataSync" />
+
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- TODO dELETE THIS NONSESNESSENESS HERE -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>

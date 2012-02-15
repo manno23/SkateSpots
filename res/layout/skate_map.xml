@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/mapViewContainer"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <com.manno.android.skatespotsapp.Map.ExtendedMapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:apiKey="0-WdtPmYmWId557fFW7S3-xziFz9pN2RwM2LSuw" />
+
+</LinearLayout>

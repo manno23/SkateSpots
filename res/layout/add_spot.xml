@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  >
+
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_fill"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Name of spot"
+            android:maxLength="30"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description "
+            android:maxLength="80"
+            android:textSize="18dp"
+            android:imeOptions="actionDone"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+                <CheckBox android:id="@+id/check_banks"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Banks" />
+                <CheckBox android:id="@+id/check_bowls"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Bowls" />
+                <CheckBox android:id="@+id/check_drops"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Drops" />
+                <CheckBox android:id="@+id/check_euros"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Euros" />
+                <CheckBox android:id="@+id/check_gaps"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Gaps" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+                <CheckBox android:id="@+id/check_ledges"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Ledges" />
+               <CheckBox android:id="@+id/check_manual_pads"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Manual Pads" />
+                <CheckBox android:id="@+id/check_rails"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Rails" />
+                <CheckBox android:id="@+id/check_ramps"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Ramps" />
+                <CheckBox android:id="@+id/check_stairs"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Stairs" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- For use when authorisation has been implemented
+        <ToggleButton
+            android:id="@+id/share_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOn=""
+            android:textOff=""
+            android:layout_marginLeft="14dp" />
+
+        <TextView
+            android:id="@+id/share_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share_with_public"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="36dp" />
+            -->
+
+        <Button
+            android:layout_marginBottom="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_but"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:text="Share!"
+            android:textColor="#0033EE"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+</ScrollView>
+

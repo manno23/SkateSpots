@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#FFFFFF" 
+	android:orientation="vertical" >
+
+			
+	 **TITILE
+    <TextView 	android:id="@+id/name" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:layout_marginTop="12dp"
+		android:textSize="36dp"
+		android:textColor="#000000"
+		android:gravity="center_horizontal" />
+			
+     **RATING
+	<LinearLayout	android:id="@+id/rating_layout"
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent"
+		android:layout_weight="1.1" 
+		android:gravity="center"
+		android:orientation="horizontal">		
+		
+		<LinearLayout	android:id="@+id/ratings"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent"
+			android:layout_weight="1.0"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:paddingLeft="20dp"
+			android:paddingBottom="6dp" >			
+			<TextView 	android:id="@+id/rating_display" 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent"
+				android:textColor="#00FF00" 
+				android:text="3.0"
+				android:textSize="70dp"
+				android:gravity="center_horizontal" />
+			<TextView   android:id="@+id/vote_count"
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent"
+				android:textColor="#000000" 
+				android:textSize="18dp"	
+				android:gravity="center_horizontal" />			
+		</LinearLayout>
+			
+		<LinearLayout	android:id="@+id/rating_buttons"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent"
+			android:layout_weight="0.9"
+			android:orientation="vertical"
+			android:gravity="center" >			
+			<ImageButton   android:id="@+id/like_button"
+				android:src="@drawable/like_button"
+				android:clickable="false"
+				android:scaleType="fitCenter"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="#000033FF"
+				android:layout_marginBottom="5dp" />
+			<ImageButton   android:id="@+id/dislike_button"
+				android:src="@drawable/dislike_button"
+				android:clickable="false"
+				android:scaleType="fitCenter"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="#005533AA"
+				android:layout_marginTop="5dp" />			
+		</LinearLayout>
+
+			
+	</LinearLayout>
+			
+	 **GALLERY
+	<ViewSwitcher android:id="@+id/gallery_switcher"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingTop="30dp"
+		android:paddingBottom="10dp"
+		android:layout_weight="1.0"	
+		android:background="@drawable/viewspot_gallery_bgnd" >
+		<ProgressBar android:id="@+id/progress_wheel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:indeterminate="true"
+			style="@android:style/Widget.ProgressBar.Small.Inverse" />
+		<Gallery android:id="@+id/gallery" 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:spacing="23dp" />	
+ 	</ViewSwitcher>
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/spot_info_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+
+    <TextView android:id="@+id/spot_description"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:text="This is the spot description. All details of the spot will reside in this area. People better make there description be somewhat meaningful or humorous because I could be sticking some filthy ads right here"
+        android:textSize="14dp"
+        android:lines="4"
+        android:gravity="center" />
+
+    **SPOT FEATURES
+    <LinearLayout android:id="@+id/spot_features_row_1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#00FF00"
+        android:layout_margin="10dp" />
+    <LinearLayout android:id="@+id/spot_features_row_2"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#0000FF"
+        android:layout_margin="10dp" />
+<!--
+<ImageView android:id="@+id/feature_bowls"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:src="@drawable/feature_bowls"
+                   android:adjustViewBounds="true"
+                   android:background="#123456"
+                   android:visibility="gone" />
+        <ImageView android:id="@+id/feature_banks"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/feature_banks"
+                   android:background="#923456"
+                   android:visibility="gone" />
+        <ImageView android:id="@+id/feature_drops"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/feature_drops"
+                   android:background="#123956"
+                   android:visibility="gone" />
+        <ImageView android:id="@+id/feature_euros"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/feature_euros"
+                   android:background="#123496"
+                   android:visibility="gone" />
+        <ImageView android:id="@+id/feature_gaps"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/feature_gaps"
+                   android:background="#183456"
+                   android:visibility="gone" />
+        <ImageView android:id="@+id/feature_ledges"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/feature_ledges"
+                   android:background="#F23456"
+                   android:visibility="gone" />
+        <ImageView android:id="@+id/feature_manual_pads"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/feature_manual_ramps"
+                   android:visibility="gone" />
+        <ImageView android:id="@+id/feature_rails"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/feature_rails"
+                   android:visibility="gone" />
+        <ImageView android:id="@+id/feature_ramps"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/feature_ramps"
+                   android:visibility="gone" />
+        <ImageView android:id="@+id/feature_stairs"
+                   android:layout_height="fill_parent"
+                   android:layout_width="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/feature_stairs"
+                   android:visibility="gone" />    -->
+
+    **RATING
+    <LinearLayout android:id="@+id/rating_layout"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:paddingBottom="10dp" >
+
+        <LinearLayout	android:id="@+id/ratings"
+                         android:layout_height="wrap_content"
+                         android:layout_width="fill_parent"
+                         android:layout_weight="1.0"
+                         android:gravity="top|center_horizontal"
+                         android:orientation="vertical" >
+            <TextView 	android:id="@+id/rating_display"
+                          android:layout_height="wrap_content"
+                          android:layout_width="fill_parent"
+                          android:textColor="#00FF00"
+                          android:text="3.0"
+                          android:textSize="58dp"
+                          android:includeFontPadding="false"
+                          android:gravity="center_horizontal" />
+            <TextView   android:id="@+id/vote_count"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:includeFontPadding="false"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout	android:id="@+id/rating_buttons"
+                         android:layout_height="wrap_content"
+                         android:layout_width="fill_parent"
+                         android:gravity="center"
+                         android:layout_weight="1.0" >
+            <ImageButton   android:id="@+id/like_button"
+                           android:src="@drawable/like_button"
+                           android:clickable="false"
+                           android:scaleType="fitXY"
+                           android:padding="10dp"
+                           android:layout_height="wrap_content"
+                           android:layout_width="wrap_content" />
+            <ImageButton   android:id="@+id/dislike_button"
+                           android:src="@drawable/dislike_button"
+                           android:clickable="false"
+                           android:scaleType="fitXY"
+                           android:padding="10dp"
+                           android:layout_height="wrap_content"
+                           android:layout_width="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+ </LinearLayout>

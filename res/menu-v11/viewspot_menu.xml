@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+  <group android:id="@+id/user_logged_in"
+  		 android:enabled="false" >
+	  <item	android:id="@+id/menu_addphoto"
+	  		android:title="@string/addphoto" />
+  </group>
+  <group android:id="@+id/user_created_spot"
+         android:enabled="false" >
+	  <item android:id="@+id/delete_spot"
+	   		android:title="@string/delete_spot" />
+  </group>
+    0-->
+
+    <item android:id="@+id/menu_add_spot_not_ready"
+          android:title="@string/menu_add_spot_title"
+          android:icon="@drawable/ic_add"
+          android:orderInCategory="0"
+          android:showAsAction="always" />
+
+    <item android:id="@+id/menu_add_spot_ready"
+          android:title="@string/menu_add_spot_title"
+          android:icon="@drawable/ic_add_ready"
+          android:orderInCategory="0"
+          android:showAsAction="always" />
+</menu>
